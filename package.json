@@ -1,0 +1,32 @@
+{
+  "name": "trinity-debater",
+  "version": "1.0.0",
+  "description": "A powerful multi-agent orchestration tool. Claude Code, Codex, and Antigravity debate and collaborate within your local VSCode workspace.",
+  "type": "module",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node debate.js",
+    "start:bot": "node bot.js",
+    "test": "node src/test_suite.js",
+    "test:mock": "node debate.js --topic \"Should we use TypeScript or vanilla JavaScript?\" --rounds 1 --mock"
+  },
+  "keywords": [
+    "cli",
+    "multi-agent",
+    "debate",
+    "gemini",
+    "claude",
+    "openai",
+    "copilot"
+  ],
+  "author": "Antigravity Agent",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.4.1",
+    "discord.js": "^14.15.2",
+    "dotenv": "^16.4.7",
+    "minimist": "^1.2.8",
+    "ora": "^8.1.1"
+  }
+}
